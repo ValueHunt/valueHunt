@@ -1,17 +1,17 @@
 import Image from 'next/image'
-import styles from '../styles/home/WhatIsVh.module.css'
+import styles from '../styles/home/HowVh.module.css'
 
-export default function WhatIs() {
+export default function HowVH() {
     return (
-        <div className={styles.con}>
-
+        <div className={styles.container}>
+            <Image className={styles.logo_img} priority src='/icon.png' alt="VH LOGO" width={250} height={250} />
             {/* ****************************************************Content Starts*************************** */}
 
             <div className={styles.content}>
                 {/* ***********************************Heading ************************************* */}
                 <div className={styles.heading}>
                     <p>
-                        What is ValueHunt?</p>
+                        How to use ValueHunt?</p>
                 </div>
                 {/* *********************************************Paragraph ********************************** */}
                 <div className={styles.para}>
@@ -25,7 +25,7 @@ export default function WhatIs() {
             </div>
 
             {/* ***************************Image of VH********************************* */}
-            <Image src='/icon.png' alt="VH LOGO" width={250} height={250} className={styles.logo_img} priority />
+
 
         </div>
     )

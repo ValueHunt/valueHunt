@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
 import styles from '@/styles/home/Home.module.css'
-
 import WhatisVH from '../components/WhatIsVH'
-import { Navbar } from '@/components/NavBar'
 import Footer from '@/components/Footer'
-
+import HowVH from '@/components/HowVH'
+import NavBar from '@/components/NavBar'
 
 export default function Home() {
   return (
@@ -25,10 +23,10 @@ export default function Home() {
 
       <main >
 
-        <Navbar />
+        <NavBar />
 
         <WhatisVH />
-        <WhatisVH />
+        <HowVH/>
 
 
         <Footer />
