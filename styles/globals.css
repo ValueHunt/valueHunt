@@ -1,7 +1,9 @@
+
 *{
   box-sizing: 'border-box';
-  padding:0;
-  margin:0;
+  padding:0px;
+  margin:0px;
+  font-family: 'Secular One', sans-serif;
 }
 
 main{
@@ -10,4 +12,5 @@ main{
   background-color: grey;
   min-height: 100vh;
   min-width: 100vw;
+
 }
