@@ -2,8 +2,6 @@ import Head from 'next/head'
 
 import WhatisVH from '../components/WhatIsVH'
 
-import Footer from '@/components/Footer'
-
 
 export default function Home() {
   return (
@@ -17,17 +15,11 @@ export default function Home() {
       </Head>
 
 
-      <main >
-
-       
-
         <WhatisVH />
+        {/* <WhatisVH /> */}
+      
         
 
-
-        <Footer />
-
-      </main>
     </>
   )
 }

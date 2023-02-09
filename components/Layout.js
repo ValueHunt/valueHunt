@@ -7,8 +7,8 @@ export default function Layout({ children }) {
       <div className="loader close" id="loader"></div>
       <NavBar />
       <main>
-       
-        {children}</main>
+      {children}
+       </main>
       <Footer />
       </div>
   );
