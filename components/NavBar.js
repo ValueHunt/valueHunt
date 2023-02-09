@@ -2,8 +2,7 @@ import Link from "next/link"
 import styles from '../styles/navbar.module.css'
 import Image from "next/image"
 
-export default function NavBar()
-{
+export default function NavBar () {
   return (
     <>
       <div className={styles.navbar}>

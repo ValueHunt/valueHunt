@@ -1,0 +1,285 @@
+.contact {
+  /* height: 100vh; */
+  /* background-color: rgb(202, 108, 108); */
+  margin-bottom: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 77px;
+}
+.contact h1 {
+  text-align: center;
+  color: rgb(255 181 56);
+  font-weight: 400;
+}
+
+.innerform{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+    
+}
+
+.html_form label {
+  font-size: 19.2px;
+  line-height: 28.8px;
+  /* margin-bottom: 9.6px; */
+}
+.html_form input[type="text"],
+.html_form input[type="email"] {
+  font-size: 22.4px;
+  height: 56px;
+  padding: 15.2px 15.8px;
+  width: 274px;
+  /* height: 34px; */
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+.html_form textarea {
+  font-size: 22.4px;
+  height: 56px;
+  padding: 15.8px;
+  width: 64rem;
+  height: 17rem;
+  border:2px solid grey;
+  border-radius: 4px;
+  /* margin-bottom: 1px; */
+}
+.per_info{
+    display: flex;
+    gap: 87px;
+}
+.my_btn {
+  display: block;
+  padding: 9px 25px;
+  font-size: 2rem;
+  width: 22rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #fc9900;
+  color: #fc8f00;
+  margin: 10px;
+  font-weight: 400;
+  background-color: white;
+  
+  /* height: 52px; */
+}
+
+.my_btn:hover {
+  cursor: pointer;
+  background-color: #fc9900;
+  color: white;
+}
+
+.name{
+    display: flex;
+    gap: 9.6px;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    gap: 9.6px;
+    flex-direction: column;
+}
+.msg{
+    display: flex;
+    gap: 9.6px;
+    flex-direction: column;
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1214px) {
+  .contact h1 {
+    font-size: 4rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 20.4px;
+
+}
+  .name label{
+    font-size: 18px;
+  }
+ 
+  .email label{
+    font-size: 18px;
+  }
+  .msg label{
+    font-size: 18px;
+  }
+  .html_form textarea{
+    font-size: 20.4px;
+  }
+}
+
+@media only screen and (min-width: 949px) and (max-width: 1024px) {
+  .contact h1 {
+    font-size: 3.8rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 20.2px;
+
+}
+  .name label{
+    font-size: 17px;
+  }
+ 
+  .email label{
+    font-size: 17px;
+  }
+  .msg label{
+    font-size: 17px;
+  }
+  .html_form textarea{
+    font-size: 20.2px;
+  }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 949px) {
+  .contact h1 {
+    font-size: 3.6rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 20px;
+
+}
+  .name label{
+    font-size: 16px;
+  }
+ 
+  .email label{
+    font-size: 16px;
+  }
+  .msg label{
+    font-size: 16px;
+  }
+  .html_form textarea{
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 799px) {
+  .innerform{
+    margin: 0 37px;
+  }
+  .contact h1 {
+    font-size: 3.4rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 19px;
+
+}
+  .name label{
+    font-size: 15px;
+  }
+ 
+  .email label{
+    font-size: 17px;
+  }
+  .msg label{
+    font-size: 15px;
+  }
+  .html_form textarea{
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 569px) {
+  .innerform{
+    margin: 0 37px;
+  }
+  .contact h1 {
+    font-size: 3.4rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 19px;
+
+}
+  .name label{
+    font-size: 15px;
+  }
+ 
+  .email label{
+    font-size: 17px;
+  }
+  .msg label{
+    font-size: 15px;
+  }
+  .html_form textarea{
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 230px) and (max-width: 300px){
+  .innerform{
+    margin: 0 37px;
+  }
+  .contact h1 {
+    font-size: 3.4rem;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 19px;
+
+}
+  .name label{
+    font-size: 15px;
+  }
+ 
+  .email label{
+    font-size: 17px;
+  }
+  .msg label{
+    font-size: 15px;
+  }
+  .html_form textarea{
+    font-size: 19px;
+  }
+
+}
+@media only screen and (min-width: 100px) and (max-width: 230px){
+  .innerform{
+align-items: baseline; 
+margin: 0 12px;   
+  }
+  .per_info{
+    flex-direction: column;
+  }
+  .contact{
+    align-items: baseline;
+  }
+  .contact h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    
+    word-break: break-word;
+    line-height: 30px;display: inline-block;    width: 398px;
+  }
+  .html_form input[type="text"],
+.html_form input[type="email"]{
+  font-size: 19px;
+  width: 367px;
+
+}
+  .name label{
+    font-size: 15px;
+  }
+ 
+  .email label{
+    font-size: 17px;
+  }
+  .msg label{
+    font-size: 15px;
+  }
+  .html_form textarea{
+    font-size: 19px; width: 367px;
+  }
+
+}
