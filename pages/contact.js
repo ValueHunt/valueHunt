@@ -1,10 +1,9 @@
-
-import styles from "../styles/contact.module.css";
-
+import styles from "../styles/contact/contact.module.css";
+import Head from 'next/head'
 
 export async function getStaticProps(){
   const token=process.env.token
-  // console.log('contact tooken ',token)
+
   return {
     props: {
       token,
@@ -91,6 +90,10 @@ createHtml(result,'danger')
   return (
     <>
      
+     <Head>
+      <title>Contact Us | ValueHunt</title>
+     </Head>
+
       <div className={styles.contact}>
         <h1>
           Thanks for taking the time to reach <br /> out. How can We help you
@@ -122,4 +125,3 @@ createHtml(result,'danger')
     </>
   );
 }
-
