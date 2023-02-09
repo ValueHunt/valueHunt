@@ -1,0 +1,13 @@
+.footer {
+   flex-grow: 1;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+  }
+
+.heading{
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+}
+

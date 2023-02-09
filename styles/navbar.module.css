@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    box-sizing: border-box;
+    background-color: black;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    /* display: flex; */
+    cursor: pointer;
+    box-sizing: border-box;
+    /* background-color: blueviolet; */
+    /* flex: 1; */
+    padding: 10px 0px 0px 100px ;
+}
+.img{
+    
+    border-radius: 50%;
+    border:2px solid chocolate;
+}
+.navItems{
+    display: flex;
+    /* background-color: chartreuse; */
+    justify-content: space-between;
+    align-items: center;
+}
+.navItems a{
+    font-size: 24px;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    /* justify-content:space-between; */
+    padding-right: 80px;
+}
