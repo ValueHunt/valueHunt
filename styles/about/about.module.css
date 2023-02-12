@@ -1,0 +1,46 @@
+.container {
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 70px;
+    gap: 30px;
+}
+
+.about h2 {
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.para {
+    padding-left: 300px;
+    padding-right: 300px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+/* Team members photos */
+
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+    gap: 70px;
+}
+
+.member {
+    border-radius: 50%;
+    margin: 8px;
+    border: 5px solid greenyellow;
+    justify-content: space-between;
+    align-items: center;
+}
