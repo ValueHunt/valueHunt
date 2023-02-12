@@ -25,7 +25,7 @@ export default function NavBar () {
           </Link>
         </div>
       </div>
-
+      <div className='close' id="notification"></div>
     </>
   )
 }
