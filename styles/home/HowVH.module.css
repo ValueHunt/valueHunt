@@ -22,7 +22,7 @@ Paragrpah - 18px
 }
 .content{
     display: flex;
-    border: solid 5px red;
+    /* border: solid 5px red; */
     gap:7px;
     flex-direction: column;
     width: 57vw;
@@ -50,4 +50,7 @@ Paragrpah - 18px
     padding: 7px;
     background-color: #12d3fe;
     
+}
+.try_HowVH{
+    padding-top: 10px;
 }
