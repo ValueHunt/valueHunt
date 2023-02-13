@@ -4,11 +4,7 @@ export default function Button({ props }) {
     return (
         // <button className={styles[props.className]} onClick={props.clickEvent}>{props.text}{(props.icon)}</button>
         <Link href={props.link} className={styles[props.className]} target='_blank' rel='noopener noreferrer'>
-<<<<<<< HEAD
                 {props.text} {props.icon}
-=======
-               {props.text} {props.icon}
->>>>>>> 81198b6a89e88a93d91ab38b2aec15ab25143658
         </Link>
     );
 };
