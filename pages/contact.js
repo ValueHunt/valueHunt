@@ -65,7 +65,8 @@ function createHtml(msg,color){
       body: JSONdata,
     }
 
-    const response = await fetch('Enter the backend url', options)
+    const response = await fetch('http://127.0.0.1:5000/contact', options)
+    console.log('res',response)
     const result = await response.json()
     event.target.name.value=''
     event.target.email.value=''

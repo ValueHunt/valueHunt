@@ -27,13 +27,13 @@ export default function about() {
         </div>
         <div className={styles.images}>
           <Link href='google.com'>
-            <Image className={styles.member} src='/../public/icon.png' alt='member image' width={100} height={100}></Image>
+            <Image className={styles.member} src='/icon.png' alt='member image' width={100} height={100}></Image>
           </Link>
           <Link href='google.com'>
-            <Image className={styles.member} src='/../public/icon.png' alt='memebr image' width={100} height={100}></Image>
+            <Image className={styles.member} src='/icon.png' alt='memebr image' width={100} height={100}></Image>
           </Link>
           <Link href='google.com'>
-            <Image className={styles.member} src='/../public/icon.png' alt='member image' width={100} height={100}></Image>
+            <Image className={styles.member} src='/icon.png' alt='member image' width={100} height={100}></Image>
           </Link>
         </div>
       </div>
