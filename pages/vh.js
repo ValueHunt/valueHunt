@@ -89,7 +89,7 @@ export default function Contact(props) {
           <div className={styles.per_info}>
             <div className={styles.cloth}>
               <label htmlFor="Upload photo" className={styles.file}>Choose picture
-                <input type="file" name="clothImg" id='clothImg' className={styles.clothId} required accept='image/*' capture='camera' />
+                <input type="file" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
               </label>
             </div>
             <div className={styles.size}>
@@ -109,6 +109,7 @@ export default function Contact(props) {
             <div className={styles.clothtype}>
               <label htmlFor="clothType">Choose Cloth Type</label>
               <select name="clothType" className={styles.clothTypeId}>
+                <option name='clothType' className={styles.typeOf}>Select Cloth Type</option>
                 <option name='clothType' className={styles.typeOf}>Cotton</option>
                 <option name='clothType' className={styles.typeOf}>No Cotton</option>
                 <option name='clothType' className={styles.typeOf}>Mixed</option>
