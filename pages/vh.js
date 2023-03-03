@@ -38,10 +38,10 @@ export default function Contact(props) {
     const clothImgInput = document.getElementById('clothImg');
     var data = new FormData()
     data.append('clothImg', clothImgInput.files[0])
-    data.append('size', event.target.size.value)
-    data.append('brand',event.target.brand.value)
-    data.append('clothType', event.target.clothType.value)
-   
+    // data.append('size', event.target.size.value)
+    data.append('brand', event.target.brand.value)
+    // data.append('clothType', event.target.clothType.value)
+
     console.log(data)
     // const JSONdata = JSON.stringify(data);
     // console.log(JSONdata)
@@ -61,80 +61,55 @@ export default function Contact(props) {
     const response = await fetch("http://127.0.0.1:5000/vh", options);
     const result = await response.json();
     event.target.clothImg.value = "";
-    event.target.size.value = "";
+    // event.target.size.value = "";
     event.target.brand.value = "";
-    event.target.clothType.value = "";
+    // event.target.clothType.value = "";
     x.classList.add("close");
     x.classList.remove("loading");
 
-    // if (!response.ok) {
-
-    //     createHtml(result, 'danger')
-    // }
-    // else {
-
-    //     createHtml(result, 'success')
-
-    // }
+  
   }
-
   return (
     <>
       <Head>
         <title>App | ValueHunt</title>
       </Head>
 
-      <div className={styles.contact}>
-        <div className={styles.html_form}>
-          <form
-            action="#"
-            method="post"
-            onSubmit={submitHandler}
-            className={styles.innerform}
-          >
-            <div className={styles.per_info}>
-              
-                <div className={styles.name}>
-                  {" "}
-                  <label htmlFor="clothImg">
-                    Upload Image
-                  </label>
-                  <input
-                    type="file"
-                    name="clothImg"
-                    id="clothImg"
-                    required
-                    min="3"
-                    accept="image/*"
-                  />
-                </div>
-                <div className={styles.size}>
-                  <label htmlFor="size">Size</label>
-                  <input type="number" name="size" id="size" max={50} min={20} />
-                </div>
-                <div className={styles.brand}>
-                  <select name="brand" id="brand">
-                    <option name="brand">No Brand</option>
-                    <option name="brand">Adidas</option>
-                    <option name="brand">ck</option>
-                    <option name="brand">lenovo</option>
-                    <option name="brand">hp</option>
-                  </select>
-                </div>
-                <div className={styles.clothtype}>
-                  <select name="clothType" id="clothType">
-                   
-                    <option name="clothType" >Cotton</option>
-                    <option name="clothType">No Cotton</option>
-                    <option name="clothType">Mixed</option>
-                  </select>
-                </div>
-                <input type="submit" value="Submit" className={styles.my_btn} />
-            
+
+      <div className={styles.html_form}>
+        <form action="#" method="post" onSubmit={submitHandler} className={styles.innerform}>
+          <div className={styles.per_info}>
+            <div className={styles.cloth}>
+              <label htmlFor="Upload photo" className={styles.file}>Choose Picture
+                <input type="file" id ="clothImg" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
+              </label>
             </div>
-          </form>
-        </div>
-      </div>
+            {/* <div className={styles.size}>
+              <label htmlFor="size">Size</label>
+              <input type="number" name="size" className={styles.sizeId} max={99} min={20} id={styles.size} />
+            </div> */}
+            <div className={styles.brand}>
+              <label htmlFor="brand">Choose Brand</label>
+              <select name="brand" className={styles.brandId}>
+                <option className={styles.brand} name='brand'>No Brand</option>
+                <option className={styles.brand} name='brand'>Adidas</option>
+                <option className={styles.brand} name='brand'>ck</option>
+                <option className={styles.brand} name='brand'>lenovo</option>
+                <option className={styles.brand} name='brand'>hp</option>
+              </select>
+            </div>
+            {/* <div className={styles.clothtype}>
+              <label htmlFor="clothType">Select Type</label>
+              <select name="clothType" className={styles.clothTypeId}>
+                <option name='clothType' className={styles.typeOf}>Cotton</option>
+                <option name='clothType' className={styles.typeOf}>No Cotton</option>
+                <option name='clothType' className={styles.typeOf}>Mixed</option>
+              </select>
+            </div> */}
+            <input type="submit" value="Submit" className={styles.my_btn} />
+          </div>
+        </form>
+      </div >
     </>
   );
 }
