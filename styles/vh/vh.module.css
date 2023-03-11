@@ -17,24 +17,24 @@
     padding: 20px;
     border-radius: 20px;
 }
-.clothId{
+.cloth_input{
     margin: 20px;
     padding: 5px 10px;
     font-size: 18px;
 }
-.sizeId{
+.size_input{
     margin: 20px;
     padding: 5px 20px;
     font-size: 18px;
     border-radius: 10px;
 }
-.brandId{
+.brandTag{
     margin: 20px;
     padding: 5px 10px;
     font-size: 18px;
     border-radius: 10px;
 }
-.clothTypeId{
+.clothType{
     margin: 20px;
     padding: 5px 10px;
     font-size: 18px;
@@ -56,6 +56,6 @@
 .brand{
     border-radius: 20pxs;
 }
-label.brandId{
+label.brandTag{
     border-radius: 10px;
 }

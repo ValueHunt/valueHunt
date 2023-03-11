@@ -61,9 +61,9 @@ export default function Contact(props) {
     const response = await fetch("http://127.0.0.1:5000/vh", options);
     const result = await response.json();
     event.target.clothImg.value = "";
-    event.target.size.value = "";
+    // event.target.size.value = "";
     event.target.brand.value = "";
-    event.target.clothType.value = "";
+    // event.target.clothType.value = "";
     x.classList.add("close");
     x.classList.remove("loading");
 
@@ -89,16 +89,16 @@ export default function Contact(props) {
           <div className={styles.per_info}>
             <div className={styles.cloth}>
               <label htmlFor="Upload photo" className={styles.file}>Choose picture
-                <input type="file" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
+                <input type="file" name="clothImg" id="clothImg" className={styles.cloth_input} required accept='image/*' capture='camera' />
               </label>
             </div>
             <div className={styles.size}>
               <label htmlFor="size">Size</label>
-              <input type="number" name="size" className={styles.sizeId} max={99} min={20} id={styles.size} />
+              <input type="number" name="size" className={styles.size_input} max={99} min={20} id={styles.size} />
             </div>
             <div className={styles.brand}>
               <label htmlFor="brand">Choose Brand</label>
-              <select name="brand" className={styles.brandId}>
+              <select name="brand" className={styles.brandTag} id='brandId'>
                 <option className={styles.brand} name='brand'>No Brand</option>
                 <option className={styles.brand} name='brand'>Adidas</option>
                 <option className={styles.brand} name='brand'>ck</option>
@@ -108,14 +108,14 @@ export default function Contact(props) {
             </div>
             <div className={styles.clothtype}>
               <label htmlFor="clothType">Choose Cloth Type</label>
-              <select name="clothType" className={styles.clothTypeId}>
+              <select name="clothType" className={styles.clothType} id='clothTypeId'>
                 <option name='clothType' className={styles.typeOf}>Select Cloth Type</option>
                 <option name='clothType' className={styles.typeOf}>Cotton</option>
                 <option name='clothType' className={styles.typeOf}>No Cotton</option>
                 <option name='clothType' className={styles.typeOf}>Mixed</option>
               </select>
             </div>
-            <input type="submit" value="Submit" className={styles.my_btn} />
+            <input type="submit" value="Submit" className={styles.my_btn} id='btn' />
           </div>
         </form>
       </div >
