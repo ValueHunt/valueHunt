@@ -80,14 +80,14 @@ export default function Contact(props) {
         <form action="#" method="post" onSubmit={submitHandler} className={styles.innerform}>
           <div className={styles.per_info}>
             <div className={styles.cloth}>
-              <label htmlFor="Upload photo" className={styles.file}>Choose picture
-                <input type="file" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
+              <label htmlFor="Upload photo" className={styles.file}>Choose Picture
+                <input type="file" id ="clothImg" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
               </label>
             </div>
             {/* <div className={styles.size}>
               <label htmlFor="size">Size</label>
               <input type="number" name="size" className={styles.sizeId} max={99} min={20} id={styles.size} />
-            </div>
+            </div> */}
             <div className={styles.brand}>
               <label htmlFor="brand">Choose Brand</label>
               <select name="brand" className={styles.brandTag} id='brandId'>
@@ -98,15 +98,14 @@ export default function Contact(props) {
                 <option className={styles.brand} name='brand'>hp</option>
               </select>
             </div>
-            <div className={styles.clothtype}>
-              <label htmlFor="clothType">Choose Cloth Type</label>
+            {/* <div className={styles.clothtype}>
+              <label htmlFor="clothType">Select Type</label>
               <select name="clothType" className={styles.clothTypeId}>
-                <option name='clothType' className={styles.typeOf}>Select Cloth Type</option>
                 <option name='clothType' className={styles.typeOf}>Cotton</option>
                 <option name='clothType' className={styles.typeOf}>No Cotton</option>
                 <option name='clothType' className={styles.typeOf}>Mixed</option>
               </select>
-            </div>
+            </div> */}
             <input type="submit" value="Submit" className={styles.my_btn} />
           </div>
         </form>
