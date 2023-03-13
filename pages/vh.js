@@ -84,28 +84,18 @@ export default function Contact(props) {
                 <input type="file" id ="clothImg" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
               </label>
             </div>
-            {/* <div className={styles.size}>
-              <label htmlFor="size">Size</label>
-              <input type="number" name="size" className={styles.sizeId} max={99} min={20} id={styles.size} />
-            </div> */}
+        
             <div className={styles.brand}>
               <label htmlFor="brand">Choose Brand</label>
               <select name="brand" className={styles.brandId}>
                 <option className={styles.brand} name='brand'>No Brand</option>
-                <option className={styles.brand} name='brand'>Adidas</option>
+                <option className={styles.brand} name='brand'>Allen Solly</option>
                 <option className={styles.brand} name='brand'>ck</option>
                 <option className={styles.brand} name='brand'>lenovo</option>
                 <option className={styles.brand} name='brand'>hp</option>
               </select>
             </div>
-            {/* <div className={styles.clothtype}>
-              <label htmlFor="clothType">Select Type</label>
-              <select name="clothType" className={styles.clothTypeId}>
-                <option name='clothType' className={styles.typeOf}>Cotton</option>
-                <option name='clothType' className={styles.typeOf}>No Cotton</option>
-                <option name='clothType' className={styles.typeOf}>Mixed</option>
-              </select>
-            </div> */}
+          
             <input type="submit" value="Submit" className={styles.my_btn} />
           </div>
         </form>
