@@ -91,8 +91,8 @@ export default function Contact(props) {
                 <option className={styles.brand} name='brand'>No Brand</option>
                 <option className={styles.brand} name='brand'>Allen Solly</option>
                 <option className={styles.brand} name='brand'>Adidas</option>
-                <option className={styles.brand} name='brand'>lenovo</option>
-                <option className={styles.brand} name='brand'>hp</option>
+                <option className={styles.brand} name='brand'>Jockey</option>
+                <option className={styles.brand} name='brand'>Raymond</option>
               </select>
             </div>
           
