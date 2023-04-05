@@ -26,8 +26,6 @@ export default function NavBar () {
         </div>
       </div>
       <div className='close' id="notification"></div>
-      <div className='output' id="output"></div>
-      
     </>
   )
   
