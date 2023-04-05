@@ -40,6 +40,7 @@ export default function Contact(props) {
       },
       body: data,
     };
+    setError(null);
     try {
       const response = await fetch('http://127.0.0.1:5000/vh', options);
       const result = await response.json();
