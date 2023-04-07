@@ -41,6 +41,7 @@ export default function Contact(props) {
       body: data,
     };
     setError(null);
+    setResults(null);
     try {
       const response = await fetch('http://127.0.0.1:5000/vh', options);
       const result = await response.json();
@@ -99,7 +100,7 @@ export default function Contact(props) {
             {Object.entries(results).map(([site, products]) => (
               <div key={site} >
                 <h3 className={res_styles.siteName}>{site.charAt(0).toUpperCase() + site.slice(1)}</h3>
-                {products ? (products.length === 0 ? (
+                {Array.isArray(products) ? (products.length === 0 ? (
                   <div className={res_styles.noProduct}>No products found</div>
                 ) : (
                   <div className={res_styles.productContainer}>
@@ -121,7 +122,7 @@ export default function Contact(props) {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              {product.Label}
+                              {product.Label.substring(0,20)}
                             </a>
                           </div>
                           <div className={res_styles.price}>₹{product.Price}</div>
@@ -133,7 +134,7 @@ export default function Contact(props) {
                   </div>
                 )) : (
                   <div className={res_styles.noProduct}>
-                    Something went wrong.
+                    No Products Found.
                   </div>
                 )}
               </div>

@@ -1,19 +1,17 @@
+
 .mainContainer {
-    display: flex;
+    /* display: flex; */
     background-color: aliceblue;
     /* padding: 20px; */
 }
 
-.resultContainer {
-    padding: 50px;
-    /* display: flex; */
+
+.resultContainer h2{
+    padding: 10px 20px;
+    text-align: center;
 
 }
 
-/* 
-.resultContainer h2 {
-    align-items: center;
-} */
 
 .siteName {
     display: block;
@@ -21,6 +19,7 @@
     background-color: #4CAF50;
     color: white;
     text-align: center;
+    /* width: 100%; */
     text-decoration: none;
     font-size: 20px;
     border-radius: 5px;
@@ -50,7 +49,6 @@
     font-size: 16px;
     margin: 10px 20px;
 }
-
 .prodContainer:hover {
     font-weight: bold;
     font-size: 20px;
@@ -96,6 +94,8 @@
     flex-wrap: wrap; */
     justify-content: space-between;
     margin: 0 -10px;
+    padding: 10px 20px;
+    overflow-x: hidden;
 }
 
 .prodContainer {
