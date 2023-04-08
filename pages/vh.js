@@ -134,7 +134,7 @@ export default function Contact(props) {
                   </div>
                 )) : (
                   <div className={res_styles.noProduct}>
-                    No Products Found.
+                    No Products Found
                   </div>
                 )}
               </div>
