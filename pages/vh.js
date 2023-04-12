@@ -53,7 +53,7 @@ export default function Contact(props) {
       setLoading(false);
       x.classList.remove("loading");
       x.classList.add("close");
-      setError('Something went wrong. Please try again later.');
+      setError('Something went wrong. Please try again later');
     }
     setFormKey(formKey + 1);
   }
@@ -96,49 +96,51 @@ export default function Contact(props) {
       <div className={res_styles.mainContainer}>
         {results && (
           <div className={res_styles.resultContainer}>
-            <h2>Results</h2>
-            {Object.entries(results).map(([site, products]) => (
-              <div key={site} >
-                <h3 className={res_styles.siteName}>{site.charAt(0).toUpperCase() + site.slice(1)}</h3>
-                {Array.isArray(products) ? (products.length === 0 ? (
-                  <div className={res_styles.noProduct}>No products found</div>
-                ) : (
-                  <div className={res_styles.productContainer}>
-                    {products.map((product, index) => (
-                      <div key={index} className={res_styles.prodContainer}>
-                        <a
-                          href={product.ProdLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Image
-                            src={product.ImageSrc}
-                            width={200}
-                            height={200}
-                          />
-                          <div className={res_styles.buy_link}>
+            {results !== 'Image is Corrupted' ? (
+              <>
+                <h2>Results</h2>
+                {Object.entries(results).map(([site, products]) => (
+                  <div key={site} >
+                    <h3 className={res_styles.siteName}>{site.charAt(0).toUpperCase() + site.slice(1)}</h3>
+                    {Array.isArray(products) ? (products.length === 0 ? (
+                      <div className={res_styles.noProduct}>No products found</div>
+                    ) : (
+                      <div className={res_styles.productContainer}>
+                        {products.map((product, index) => (
+                          <div key={index} className={res_styles.prodContainer}>
                             <a
                               href={product.ProdLink}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              {product.Label.substring(0,20)}
+                              <Image
+                                src={product.ImageSrc}
+                                width={200}
+                                height={200}
+                              />
+                              <div className={res_styles.buy_link}>
+                                <a
+                                  href={product.ProdLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {product.Label.substring(0, 20)}
+                                </a>
+                              </div>
+                              <div className={res_styles.price}>₹{product.Price}</div>
+
                             </a>
+
                           </div>
-                          <div className={res_styles.price}>₹{product.Price}</div>
-
-                        </a>
-
+                        ))}
                       </div>
-                    ))}
+                    )) : (
+                      <div className={res_styles.noProduct}>No Products Found</div>
+                    )}
                   </div>
-                )) : (
-                  <div className={res_styles.noProduct}>
-                    No Products Found
-                  </div>
-                )}
-              </div>
-            ))}
+                ))}
+              </>) : (<div className={res_styles.noProduct}>Image is Corrupted</div>
+            )}
           </div>
         )}
         {error && (
