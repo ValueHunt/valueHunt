@@ -65,7 +65,7 @@ function createHtml(msg,color){
       body: JSONdata,
     }
 
-    const response = await fetch('http://127.0.0.1:5000/contact', options)
+    const response = await fetch('https://valuehunt-a7coder.azurewebsites.net/contact', options)
     console.log('res',response)
     const result = await response.json()
     event.target.name.value=''

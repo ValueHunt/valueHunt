@@ -43,8 +43,10 @@ export default function Contact(props) {
     setError(null);
     setResults(null);
     try {
-      const response = await fetch('http://127.0.0.1:5000/vh', options);
+      const response = await fetch('https://valuehunt-a7coder.azurewebsites.net/vh', options);
       const result = await response.json();
+      console.log('+++++++++++++++++++-Result--------------')
+      console.log(result)
       setResults(result);
       setLoading(false);
       x.classList.remove("loading");
@@ -96,7 +98,7 @@ export default function Contact(props) {
       <div className={res_styles.mainContainer}>
         {results && (
           <div className={res_styles.resultContainer}>
-            {results !== 'Image is Corrupted' ? (
+            {results !== 'Image is Corrupted'  ? (
               <>
                 <h2>Results</h2>
                 {Object.entries(results).map(([site, products]) => (
