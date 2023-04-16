@@ -14,7 +14,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Contact(props) {
+export default function vhHandler(props) {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
@@ -43,7 +43,10 @@ export default function Contact(props) {
     setError(null);
     setResults(null);
     try {
+
       const response = await fetch('https://valuehunt-a7coder.azurewebsites.net/vh', options);
+
+     
       const result = await response.json();
       console.log('+++++++++++++++++++-Result--------------')
       console.log(result)
@@ -95,10 +98,11 @@ export default function Contact(props) {
       {/* output form */}
 
 
+
       <div className={res_styles.mainContainer}>
         {results && (
           <div className={res_styles.resultContainer}>
-            {results !== 'Image is Corrupted'  ? (
+            {typeof results === 'object' ? (
               <>
                 <h2>Results</h2>
                 {Object.entries(results).map(([site, products]) => (
@@ -137,11 +141,11 @@ export default function Contact(props) {
                         ))}
                       </div>
                     )) : (
-                      <div className={res_styles.noProduct}>No Products Found</div>
+                      <div className={res_styles.noProduct}>{products}</div>
                     )}
                   </div>
                 ))}
-              </>) : (<div className={res_styles.noProduct}>Image is Corrupted</div>
+              </>) : (<div className={res_styles.noProduct}>{results}</div>
             )}
           </div>
         )}
