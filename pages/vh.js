@@ -44,6 +44,7 @@ export default function Contact(props) {
     setResults(null);
     try {
       const response = await fetch('http://127.0.0.1:5000/vh', options);
+      // const response = await fetch('https://valuehunt.pythonanywhere.com/', options);
       const result = await response.json();
       setResults(result);
       setLoading(false);
@@ -96,7 +97,7 @@ export default function Contact(props) {
       <div className={res_styles.mainContainer}>
         {results && (
           <div className={res_styles.resultContainer}>
-            {results !== 'Image is Corrupted' ? (
+            {typeof results === 'object'?(
               <>
                 <h2>Results</h2>
                 {Object.entries(results).map(([site, products]) => (
@@ -135,11 +136,11 @@ export default function Contact(props) {
                         ))}
                       </div>
                     )) : (
-                      <div className={res_styles.noProduct}>No Products Found</div>
+                      <div className={res_styles.noProduct}>{results}</div>
                     )}
                   </div>
                 ))}
-              </>) : (<div className={res_styles.noProduct}>Image is Corrupted</div>
+              </>) : (<div className={res_styles.noProduct}>{results}</div>
             )}
           </div>
         )}
