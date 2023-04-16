@@ -14,7 +14,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Contact(props) {
+export default function vhHandler(props) {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
@@ -94,10 +94,11 @@ export default function Contact(props) {
       {/* output form */}
 
 
+
       <div className={res_styles.mainContainer}>
         {results && (
           <div className={res_styles.resultContainer}>
-            {typeof results === 'object'?(
+            {typeof results === 'object' ? (
               <>
                 <h2>Results</h2>
                 {Object.entries(results).map(([site, products]) => (
@@ -136,7 +137,7 @@ export default function Contact(props) {
                         ))}
                       </div>
                     )) : (
-                      <div className={res_styles.noProduct}>{results}</div>
+                      <div className={res_styles.noProduct}>{products}</div>
                     )}
                   </div>
                 ))}
