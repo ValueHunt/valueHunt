@@ -115,7 +115,7 @@ createHtml(result,'danger')
               </div>
             </div>
             <div className={styles.msg}>
-              <label htmlFor="msg">Message</label>
+              <label htmlFor="msg">Messag</label>
               <textarea name="msg" id="msg" rows="5" required min='10'></textarea>
             </div>
 
