@@ -3,10 +3,12 @@ import Head from 'next/head'
 
 export async function getStaticProps(){
   const token=process.env.token
-
+  const url = process.env.url;
+  console.log('IN staticts props ', url )
   return {
     props: {
       token,
+      url
     }
   }
 }
@@ -64,8 +66,8 @@ function createHtml(msg,color){
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     }
-
-    const response = await fetch('https://valuehunt-a7coder.azurewebsites.net/contact', options)
+    console.log('URL is ***********',props.url+'/contact')
+    const response = await fetch(props.url+'/contact', options)
     console.log('res',response)
     const result = await response.json()
     event.target.name.value=''

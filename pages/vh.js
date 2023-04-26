@@ -6,10 +6,12 @@ import res_styles from '../styles/vh/resultPage.module.css';
 
 export async function getStaticProps() {
   const token = process.env.token;
+  const url = process.env.url;
 
   return {
     props: {
       token,
+      url
     },
   };
 }
@@ -44,7 +46,7 @@ export default function vhHandler(props) {
     setResults(null);
     try {
 
-      const response = await fetch('https://valuehunt-a7coder.azurewebsites.net/vh', options);
+      const response = await fetch(props.url+'/vh', options);
 
      
       const result = await response.json();
