@@ -4,7 +4,7 @@ import Head from 'next/head'
 export async function getStaticProps(){
   const token=process.env.token
   const url = process.env.url;
-  console.log('IN staticts props ', url )
+  // console.log('IN staticts props ', url )
   return {
     props: {
       token,

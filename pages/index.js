@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import HowVH from '@/components/HowVH'
 import WhatisVH from '../components/WhatIsVH'
-import Button from '@/components/Button'
+// import Button from '@/components/Button'
 
 export default function Home() {
   return (
