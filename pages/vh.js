@@ -50,8 +50,8 @@ export default function VhHandler(props) {
 
      
       const result = await response.json();
-      console.log('+++++++++++++++++++-Result--------------')
-      console.log(result)
+      // console.log('+++++++++++++++++++-Result--------------')
+      // console.log(result)
       setResults(result);
       setLoading(false);
       x.classList.remove("loading");
