@@ -66,7 +66,7 @@ function createHtml(msg,color){
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     }
-    console.log('URL is ***********',props.url+'/contact')
+    // console.log('URL is ***********',props.url+'/contact')
     const response = await fetch(props.url+'/contact', options)
     console.log('res',response)
     const result = await response.json()
