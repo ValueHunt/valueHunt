@@ -77,7 +77,7 @@ export default function VhHandler(props) {
           <div className={styles.per_info}>
             <div className={styles.cloth}>
               <label htmlFor="Upload photo" className={styles.file}>Choose Picture
-                <input type="file" id="clothImg" name="clothImg" className={styles.clothId} required accept='image/*' capture='camera' />
+                <input type="file" id="clothImg" name="clothImg" className={styles.clothId} required accept='image/*'/>
               </label>
             </div>
 
