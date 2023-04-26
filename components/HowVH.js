@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/index/HowVh.module.css'
+import styles from '../styles/index/how.module.css'
 import Button from './Button'
 
 
