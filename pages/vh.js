@@ -16,7 +16,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function vhHandler(props) {
+export default function VhHandler(props) {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
