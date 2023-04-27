@@ -68,7 +68,7 @@ function createHtml(msg,color){
     }
     // console.log('URL is ***********',props.url+'/contact')
     const response = await fetch(props.url+'/contact', options)
-    console.log('res',response)
+    //console.log('res',response)
     const result = await response.json()
     event.target.name.value=''
     event.target.email.value=''

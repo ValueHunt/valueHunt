@@ -48,10 +48,10 @@ export default function VhHandler(props) {
 
       const response = await fetch(props.url+'/vh', options);
 
-     
+     console.log('Resonponse is ', response)
       const result = await response.json();
-      // console.log('+++++++++++++++++++-Result--------------')
-      // console.log(result)
+      console.log('+++++++++++++++++++-Result--------------')
+      console.log(result)
       setResults(result);
       setLoading(false);
       x.classList.remove("loading");
