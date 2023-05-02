@@ -10,7 +10,12 @@ clothing item.
 ## About
 
 This project is in the field of e-commerce and artificial intelligence. We use cutting-edge AI 
-algorithms to analyze images and extract key attributes of clothing items, such as color and style, 
+algorithms to analyze images and extract key attributes of clothing items, such as :
+
+- Category -> ('Cap', 'Hoodie', 'Jeans','Shirt', 'Shoes', 'T-Shirt', 'Vest')  
+- Color ('black', 'blue', 'brown', 'green', 'grey', 'orange', 'pink', 'purple', 'red',  'silver',  'white',  'yellow') 
+- Style ('chevron', 'floral', 'plain', 'polka dot', 'stripes'),
+
 in order to help users, find the best deals. Our project relies on sophisticated machine learning 
 techniques to analyze and compare vast amounts of data from multiple e-commerce platforms in 
 real-time, in order to deliver the most up-to-date information to our users.
