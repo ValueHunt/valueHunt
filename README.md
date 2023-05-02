@@ -32,4 +32,4 @@ We have used the following technologies:
 - Scraping: Selenium
 - Machine Learning: Transfer Learning and Convolutional Neural Networks (CNN) trained using VGG.
 
-# Note - Site is Under Construction ( Woking on UI But All the operation are working fine . It's a V1 ) 
+## Note - Site is Under Construction ( Woking on UI But All the operation are working fine . It's a V1 ) 
