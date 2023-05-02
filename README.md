@@ -37,4 +37,9 @@ We have used the following technologies:
 - Scraping: Selenium
 - Machine Learning: Transfer Learning and Convolutional Neural Networks (CNN) trained using VGG.
 
+## Screenshots
+![Sample Image](https://raw.githubusercontent.com/a7coder/valuehunt/main/Screenshots/sample_input.jpg)
+![Sample Output](https://raw.githubusercontent.com/a7coder/valuehunt/main/Screenshots/sample_output.png)
+![Sample Image 2](https://raw.githubusercontent.com/a7coder/valuehunt/main/Screenshots/sample_input2.jpg)
+![Sample Image](https://raw.githubusercontent.com/a7coder/valuehunt/main/Screenshots/sample_output2.png)
 ### Note - Site is Under Construction ( Woking on UI But All the operation are working fine . It's a V1 ) 
