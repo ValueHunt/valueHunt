@@ -1,6 +1,6 @@
 .Try-valueHunt{
     text-decoration: none;
-    background-color: rgb(250, 221, 6);
+    background-color: white;
     padding: 5px;
     font-size: 16px;
     letter-spacing: 2px;
@@ -10,5 +10,5 @@
     padding-right: 18px;
 }
 .Try-valueHunt:hover{
-    background-color:aqua;
+    background-color:white;
 }
