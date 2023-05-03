@@ -1,13 +1,7 @@
-/* Font SIze
-Main heading  - 40px 
-Paragrpah - 18px
-*/
-
-
-
 .container{
-    background-color:darkorange;
-    font-family: 'Secular One', sans-serif;
+    
+    background-image: url("https://media.istockphoto.com/id/1463800707/photo/close-up-designer-fashion-items-and-equipment-material-for-work-designer-in-the-showroom.jpg?b=1&s=170667a&w=0&k=20&c=T_qzKeTGg_O_xPJyFgAqUALYMi093-pQ76jm8T6J8cg="); 
+    font-family:'Times New Roman', Times, serif;
     /* padding:50; */
     /* margin-top: 120px; */
     display: flex;
@@ -17,8 +11,9 @@ Paragrpah - 18px
     padding: 27px;
     padding-right: 50px;
     padding-left: 50px;
-    
-   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 .content{
     display: flex;
@@ -31,13 +26,13 @@ Paragrpah - 18px
 
 .heading{
     font-size: 40px;
-    background-color: yellow;
+    /*background-color:rgb(244, 243, 241)*/ ;
     letter-spacing: 3px;
 }
 
 .para{
     font-size: 18px;
-    background-color: blue;
+    /*background-color: rgb(244, 244, 244);*/
     line-height: 2;
     word-wrap: break-word;   
     letter-spacing: 1.5px;
@@ -45,10 +40,10 @@ Paragrpah - 18px
 }
 
 .logo_img{
-    border: solid 7px #669ad3;
+    border: solid 7px white;
     border-radius: 999px;
     padding: 7px;
-    background-color: #12d3fe;
+    background-color: white;
     
 }
 .try_HowVH{
