@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     box-sizing: border-box;
     background-color: black;
@@ -6,30 +6,183 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     /* display: flex; */
     cursor: pointer;
     box-sizing: border-box;
     /* background-color: blueviolet; */
     /* flex: 1; */
-    padding: 10px 0px 0px 100px ;
+    padding: 10px 0px 0px 100px;
 }
-.img{
-    
+
+.img {
+
     border-radius: 50%;
-    border:2px solid chocolate;
+    border: 2px solid chocolate;
 }
-.navItems{
+
+.navItems {
     display: flex;
     /* background-color: chartreuse; */
     justify-content: space-between;
     align-items: center;
 }
-.navItems a{
+
+.navItems a {
     font-size: 18px;
     text-align: right;
     text-decoration: none;
     color: white;
     /* justify-content:space-between; */
     padding-right: 80px;
+}
+
+/* Hamburger Menu */
+
+/* 
+@media (max-width: 767px) {
+    .navItems {
+      display: none;
+    }
+  
+    .show {
+      display: block;
+    }
+  
+    .hamburgerBtn {
+      display: block;
+      position: relative;
+      z-index: 100;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .hamburgerBtn span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 25px;
+      background: #fff;
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transition: all 0.25s ease-in-out;
+    }
+    .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    }
+    .open:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .open:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .open:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  } */
+
+
+.navbar {
+    display: flex;
+    box-sizing: border-box;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px 0px 0px 100px;
+}
+
+.img {
+    border-radius: 50%;
+    border: 2px solid chocolate;
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItems a {
+    font-size: 18px;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    padding-right: 80px;
+}
+
+/* Hamburger Menu */
+
+@media (max-width: 767px) {
+    .navItems {
+        display: none;
+    }
+
+    .navItems.open {
+        display: block;
+    }
+
+    .hamburgerBtn {
+        display: block;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hamburgerBtn span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 25px;
+        background: #fff;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .hamburgerBtn span:nth-child(1) {
+        top: 5px;
+    }
+
+    .hamburgerBtn span:nth-child(2) {
+        top: 11px;
+    }
+
+    .hamburgerBtn span:nth-child(3) {
+        top: 17px;
+    }
+
+    .hamburgerBtn.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburgerBtn.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerBtn.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }

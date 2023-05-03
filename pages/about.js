@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function about() {
+export default function About() {
   return (
     <>
     <Head>

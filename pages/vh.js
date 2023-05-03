@@ -14,7 +14,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function vhHandler(props) {
+export default function VhHandler(props) {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
@@ -54,6 +54,7 @@ export default function vhHandler(props) {
       setLoading(false);
       x.classList.remove("loading");
       x.classList.add("close");
+      console.log(error)
       setError('Something went wrong. Please try again later');
     }
     setFormKey(formKey + 1);
