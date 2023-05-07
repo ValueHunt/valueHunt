@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/home/WhatIsVh.module.css'
+import styles from '../styles/index/what.module.css'
 import Button from './Button'
 
 export default function WhatIs() {

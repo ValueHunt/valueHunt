@@ -3,10 +3,12 @@ import Head from 'next/head'
 
 export async function getStaticProps(){
   const token=process.env.token
-
+  const url = process.env.url;
+  // console.log('IN staticts props ', url )
   return {
     props: {
       token,
+      url
     }
   }
 }
@@ -64,9 +66,9 @@ function createHtml(msg,color){
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     }
-
-    const response = await fetch('http://127.0.0.1:5000/contact', options)
-    console.log('res',response)
+    // console.log('URL is ***********',props.url+'/contact')
+    const response = await fetch(props.url+'/contact', options)
+    //console.log('res',response)
     const result = await response.json()
     event.target.name.value=''
     event.target.email.value=''
