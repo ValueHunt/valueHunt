@@ -5,9 +5,9 @@ import Button from './Button'
 
 export default function HowVH() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container}> 
             {/* ***************************Image of VH********************************* */}
-            <Image className={styles.logo_img} priority src='/icon.png' alt="VH LOGO" width={250} height={250} />
+            <Image className={styles.logo_img} priority src='/img/icon.jpeg' alt="VH LOGO" width={250} height={250} />
             {/* ****************************************************Content Starts*************************** */}
 
             <div className={styles.content}>
@@ -19,10 +19,9 @@ export default function HowVH() {
                 {/* *********************************************Paragraph ********************************** */}
                 <div className={styles.para}>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum tempora inventore minus cumque asperiores pariatur. Explicabo in obcaecati deleniti rem culpa quibusdam, iste ut temporibus quis veritatis adipisci deserunt.
+                    Home Page → Web App → Upload Image → Select Required Attribute → Submit → Backend Handling post request → Returns Best Deal → Now nevigate to websites.
 
                     </p>
-
                 </div>
                 <div className={styles.try_HowVH}>
                 {/* <Button props={['Try-valueHunt', 'Try ValueHunt', '\uD83E\uDC7D']}/> */}

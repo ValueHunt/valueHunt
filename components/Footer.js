@@ -12,7 +12,7 @@ export default function Footer()
  {/* ***********************************Heading ************************************* */}
            <div className={styles.heading}>
             <p>
-            HandCrafted by ❤️ © twentytwentythree</p>
+            Copyrights ❤️ © 2023</p>
            </div>
  
            

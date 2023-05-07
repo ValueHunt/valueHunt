@@ -1,56 +1,46 @@
-/* Font SIze
-Main heading  - 40px 
-Paragrpah - 18px
-*/
-
-
-
-.container{
-    background-color:darkorange;
-    font-family: 'Secular One', sans-serif;
-    /* padding:50; */
-    /* margin-top: 120px; */
+.container {
     display: flex;
-    gap:70px;
-    /* padding:70px; */
+    gap: 70px;
     align-items: center;
     padding: 27px;
     padding-right: 50px;
     padding-left: 50px;
-    
-   
-}
-.content{
-    display: flex;
-    /* border: solid 5px red; */
-    gap:7px;
-    flex-direction: column;
-    width: 57vw;
-  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
-.heading{
-    font-size: 40px;
-    background-color: yellow;
+.content {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    width: 57vw;
+
+}
+
+.heading {
+    font-size: 44px;
+    font-weight: 700;
     letter-spacing: 3px;
 }
 
-.para{
-    font-size: 18px;
-    background-color: blue;
+.para {
+    font-size: 20px;
+    font-weight: 400;
     line-height: 2;
-    word-wrap: break-word;   
+    word-wrap: break-word;
     letter-spacing: 1.5px;
-    
+
 }
 
-.logo_img{
-    border: solid 7px #669ad3;
+.logo_img {
+    border: solid 7px white;
     border-radius: 999px;
     padding: 7px;
-    background-color: #12d3fe;
-    
+    background-color: white;
+
 }
-.try_HowVH{
+
+.try_HowVH {
     padding-top: 10px;
 }
