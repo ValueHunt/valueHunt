@@ -1,51 +1,853 @@
-.container{
-    
-    background-image: url("https://media.istockphoto.com/id/1463800707/photo/close-up-designer-fashion-items-and-equipment-material-for-work-designer-in-the-showroom.jpg?b=1&s=170667a&w=0&k=20&c=T_qzKeTGg_O_xPJyFgAqUALYMi093-pQ76jm8T6J8cg="); 
-    font-family:'Times New Roman', Times, serif;
-    /* padding:50; */
-    /* margin-top: 120px; */
+.container {
     display: flex;
-    gap:70px;
-    /* padding:70px; */
+    gap: 70px;
     align-items: center;
     padding: 27px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: justify;
+    padding-left: 40px;
+    padding-top: 100px;
 }
-.content{
+
+.stepContainer {
+    color: #333;
+}
+
+.content {
     display: flex;
-    /* border: solid 5px red; */
-    gap:7px;
+    gap: 7px;
     flex-direction: column;
     width: 57vw;
-  
+
 }
 
-.heading{
-    font-size: 40px;
-    /*background-color:rgb(244, 243, 241)*/ ;
-    letter-spacing: 3px;
+.how {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+
+    /* font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 3px; */
 }
 
-.para{
-    font-size: 18px;
-    /*background-color: rgb(244, 244, 244);*/
-    line-height: 2;
-    word-wrap: break-word;   
-    letter-spacing: 1.5px;
-    
+.secondHeading {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 7.6rem;
+    color: #333;
 }
 
-.logo_img{
-    border: solid 7px white;
-    border-radius: 999px;
-    padding: 7px;
-    background-color: white;
-    
+
+.stepNumber {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+    padding-left: 20px;
 }
-.try_HowVH{
-    padding-top: 10px;
+
+.stepHeading {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    letter-spacing: -0.5px;
+    padding-left: 20px;
 }
+
+.step1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    position: relative;
+}
+
+
+.step1Img {
+    position: absolute;
+    top: -250px;
+    left: 800px;
+}
+
+
+.step2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.step2 p {
+    position: relative;
+    left: 875px;
+    top: 270px
+}
+
+.inside1 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    position: relative;
+}
+
+.inside1 h3 {
+    position: relative;
+    top: 270px;
+    left: 875px;
+}
+
+.step2Img {
+    position: relative;
+    top: -150px;
+}
+
+.step3Img {
+    position: absolute;
+    top: -345px;
+    left: 800px;
+}
+
+
+.stepHeading3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+    letter-spacing: -0.5px;
+    padding-left: 20px;
+
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.try_HowVH_HowVH {
+    padding: 75px 0px 39px 40px;
+}
+
+@media only screen and (min-width: 1260px) {}
+
+@media only screen and (min-width: 1024px) and (max-width : 1259px) {
+
+    .step1Img,
+    .step3Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+    .step2Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+
+    .step1Img {
+        position: absolute;
+        top: -250px;
+        left: 600px;
+    }
+
+
+
+    .step2 p {
+        position: relative;
+        left: 600px;
+        top: 280px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        top: 270px;
+        left: 600px;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -150px;
+    }
+
+    .step3Img {
+        position: absolute;
+        top: -345px;
+        left: 600px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+
+    }
+
+    .content {
+        margin-bottom: 100px;
+    }
+
+    .try_HowVH_HowVH {
+        padding: 75px 0px 39px 40px;
+    }
+
+}
+
+
+@media only screen and (min-width: 990px) and (max-width:1024px) {
+
+    .step1Img,
+    .step3Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+    .step2Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+
+    .step1Img {
+        position: absolute;
+        top: -250px;
+        left: 600px;
+    }
+
+
+
+    .step2 p {
+        position: relative;
+        left: 600px;
+        top: 280px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        top: 270px;
+        left: 600px;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -150px;
+    }
+
+    .step3Img {
+        position: absolute;
+        top: -345px;
+        left: 600px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+
+    }
+
+    .content {
+        margin-bottom: 100px;
+    }
+
+    .try_HowVH {
+        padding: 75px 2px 39px 50px;
+    }
+}
+
+
+@media only screen and (min-width: 989px) {
+
+    .stepNumber {
+        font-size: 6.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .stepHeading {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 990px) {
+
+    .stepNumber {
+        font-size: 6.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .stepHeading {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+    .step2Img {
+        width: 28rem;
+        height: 35rem;
+    }
+
+
+    .step1Img {
+        position: absolute;
+        top: -250px;
+        left: 400px;
+    }
+
+
+
+    .step2 p {
+        position: relative;
+        left: 480px;
+        top: 280px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        top: 270px;
+        left: 480px;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -150px;
+    }
+
+    .step3Img {
+        position: absolute;
+        top: -345px;
+        left: 400px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+
+    }
+
+    .content {
+        margin-bottom: 50px;
+    }
+
+    .try_HowVH {
+        padding: 75px 0 39px 32px;
+    }
+}
+
+
+@media only screen and (min-width: 569px) and (max-width: 798px) {
+    .stepNumber {
+        font-size: 5.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+    }
+
+    .stepHeading {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+    }
+
+    .secondHeading {
+        font-size: 1.5rem;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+    .step2Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+
+    .step1Img {
+        position: absolute;
+        top: -220px;
+        left: 200px;
+    }
+
+    .step2 p {
+        position: relative;
+        left: 276px;
+        top: 280px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        left: 276px;
+        top: 280px;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -60px;
+        right: 63px;
+    }
+
+    .step3Img {
+        position: absolute;
+        top: -220px;
+        left: 200px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .try_HowVH {
+        padding: 75px 0 39px 32px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 568px) {
+
+    .stepNumber {
+        font-size: 4.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .stepHeading {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .secondHeading {
+        font-size: 1.5rem;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+    .step2Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+
+    .step1Img {
+        position: relative;
+        top: -80px;
+        left: -41px;
+    }
+
+    .inside1 {
+        text-align: center;
+    }
+
+    .step2 p {
+        position: relative;
+        left: 21px;
+        top: -99px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        left: 40px;
+        top: -99px;
+        text-align: center;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -178px;
+        right: 41px;
+    }
+
+    .step3Img {
+        position: relative;
+        top: -116px;
+        left: -42px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 25px;
+        text-align: center;
+
+    }
+
+    .step3 p {
+        margin-top: -210px;
+    }
+
+    .try_HowVH {
+        padding: 0 0 0 61px
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .stepNumber {
+        font-size: 4.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .how {
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.75px;
+        text-align: center;
+    }
+
+    .stepHeading {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .secondHeading {
+        font-size: 1.5rem;
+        margin-bottom: 2.6rem;
+        text-align: center;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+    .step2Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+
+    .step1Img {
+        position: relative;
+        top: -80px;
+        left: -85px;
+    }
+
+    .inside1 {
+        text-align: center;
+    }
+
+    .step2 p {
+        position: relative;
+        left: 21px;
+        top: -99px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        left: 40px;
+        top: -99px;
+        text-align: center;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -178px;
+        right: 86px;
+    }
+
+    .step3Img {
+        position: relative;
+        top: -116px;
+        left: -88px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 25px;
+        text-align: center;
+
+    }
+
+    .step3 p {
+        margin-top: -210px;
+    }
+
+    .try_HowVH {
+        padding: 0 0 0 61px
+    }
+
+}
+
+@media only screen and (min-width: 230px) and (max-width: 299px) {
+    .stepNumber {
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 1.2rem;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .how {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.75px;
+        text-align: center;
+    }
+
+    .stepHeading {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 3.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .secondHeading {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+    .step2Img {
+        width: 26rem;
+        height: 27rem;
+    }
+
+
+    .step1Img {
+        position: relative;
+        top: -80px;
+        left: -106px;
+    }
+
+    .inside1 {
+        text-align: center;
+    }
+
+    .step2 p {
+        position: relative;
+        left: 21px;
+        top: -99px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        left: 40px;
+        top: -99px;
+        text-align: center;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -178px;
+        right: 106px;
+    }
+
+    .step3Img {
+        position: relative;
+        top: -116px;
+        left: -106px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+        letter-spacing: -0.5px;
+        padding-left: 25px;
+        text-align: center;
+
+    }
+
+    .step3 p {
+        margin-top: -210px;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .try_HowVH {
+        padding: 10px 5px 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 229px) {
+    .stepNumber {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 0.2rem;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .how {
+        font-size: 16px;
+        margin-bottom: 1.6rem;
+        letter-spacing: 0.75px;
+        text-align: center;
+    }
+
+    .stepHeading {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 5.2rem;
+        letter-spacing: 1.5px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .secondHeading {
+        font-size: 14px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .step1Img,
+    .step3Img {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .step2Img {
+        width: 11rem;
+        height: 15rem;
+    }
+
+
+    .step1Img {
+        position: relative;
+        top: -101px;
+        left: -74px;
+    }
+
+    .inside1 {
+        text-align: center;
+    }
+
+    .step2 p {
+        position: relative;
+        left: -11px;
+        top: -113px;
+    }
+
+    .inside1 h3 {
+        position: relative;
+        left: -4px;
+        top: -113px;
+        text-align: center;
+    }
+
+    .step2Img {
+        position: relative;
+        top: -210px;
+        right: 74px;
+    }
+
+    .step3Img {
+        position: relative;
+        top: -101px;
+        left: -74px;
+    }
+
+
+    .stepHeading3 {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 5.2rem;
+        letter-spacing: -0.5px;
+        padding-left: 0px;
+        text-align: center;
+
+    }
+
+    .step3 p {
+        margin-top: -210px;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .try_HowVH {
+
+        position: relative;
+        left: -37px;
+    }
+}
+
+@media only screen and (max-width: 100px) {}

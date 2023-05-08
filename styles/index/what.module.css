@@ -1,58 +1,451 @@
 /* Font SIze
 Main heading  - 40px 
 Paragrpah - 18px
+
+what how font-weight 700 44px
+content inside what  400 20px
+nav 500 18px
+button 500 20px
+
+
+how it works
+numeric 86px 600
+content 30px  700
 */
 
-.con{
-    
-    font-family: 'Times New Roman', Times, serif;
-    padding:50;
-    /* margin-top: 120px; */
+.con {
+    color: #fff;
+    background-color: #FF8C00;
     display: flex;
-    gap:70px;
-    /* padding:70px; */
+    gap: 70px;
     align-items: center;
     padding: 27px;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    background-image: url("https://apparelmagic.com/wp-content/uploads/blur-1850082_1920.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    z-index: 1000;
+    overflow: hidden;
+    text-align: justify;
+    padding-left: 40px;
+    /* margin-top: -2px ; */
 }
 
-.content{
+.content {
     display: flex;
-    /* border: solid 5px white; */
-    gap:7px;
+    gap: 7px;
     flex-direction: column;
     width: 57vw;
+    max-width: 100%;
+    text-align: justify;
 }
 
-.heading{
-    font-size: 40px;
+.heading {
+    font-size: 44px;
+    font-weight: 700;
     background-color: transparent;
     letter-spacing: 3px;
 }
 
-.para{
-    font-size: 18px;
-    /* background-color: white; */
+.para {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 2;
-    word-wrap: break-word;   
+    word-wrap: break-word;
     letter-spacing: 1.5px;
+
+}
+
+.imgContainer {
+    position: relative;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+
+.logo_img3 {
+    top: -228px;
+    position: absolute;
+    width: 630px;
+    height: 821px;
+}
+
+/* .logo_img1 {
+    position: absolute;
+    top: -25px;
+    left: 21px;
+    width: 216px;
+    height: 200px;
+
+    z-index: 3;
+}
+
+.logo_img2 {
+    position: absolute;
+    top: -63px;
+    left: 175px;
+    width: 240px;
+    height: 200px;
+    z-index: 2;
+}
+
+.logo_img3 {
+    position: absolute;
+    top: -180px;
+    left: 70px;
+    z-index: 1;
+} */
+
+.try {
+    padding: 40px;
+}
+
+@media only screen and (min-width: 1450px) {
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+        text-align: justify;
+    }
+
+    .logo_img3 {
+        top: -306px;
+        left: -56px;
+        position: absolute;
+        width: 630px;
+        height: 821px;
+    }
+
+    .try {
+        padding: 55px 25px 65px 0px;
+    }
+
+    .content {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        width: 57vw;
+        max-width: 100%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width : 1450px) {
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+        text-align: justify;
+    }
+
+    .imgContainer {
+        position: relative;
+        justify-content: center;
+    }
+
+    .logo_img3 {
+        top: -297px;
+        left: -74px;
+        position: absolute;
+        width: 500px;
+        height: 821px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+
+}
+
+@media only screen and (min-width: 990px) and (max-width:1024px) {
+    .logo_img3 {
+        top: -228px;
+        left: -100px;
+        position: absolute;
+        width: 500px;
+        height: 821px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .con {
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .imgContainer {
+        order: 2;
+        height: 300px;
+    }
+
+    .logo_img3 {
+        top: -74px;
+        position: relative;
+        width: 500px;
+        height: 821px;
+    }
+
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .con {
+        margin-top: 6.6rem;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+
+}
+
+@media only screen and (min-width: 799px) and (max-width: 989px) {
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .imgContainer {
+        height: 250px;
+    }
+
+    .logo_img3 {
+        top: -80px;
+        position: relative;
+        width: 450px;
+        height: 700px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+}
+
+
+@media only screen and (min-width: 569px) and (max-width: 798px) {
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .imgContainer {
+        height: 200px;
+    }
+
+    .logo_img3 {
+        top: -103px;
+        position: relative;
+        width: 400px;
+        height: 600px;
+    }
+
+    .try {
+        padding: 27px 90px 27px 0px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 568px) {
+    .heading p {
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .imgContainer {
+        height: 150px;
+    }
+
+    .logo_img3 {
+        top: -80px;
+        position: relative;
+        width: 375px;
+        height: 500px;
+        padding-left: 15px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .heading p {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .imgContainer {
+        height: 150px;
+    }
+
+    .logo_img3 {
+        top: -72px;
+        position: relative;
+        width: 289px;
+        height: 462px;
+        padding-left: 20px;
+    }
+
+    .content {
+        text-align: start;
+        word-break: keep-all;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
     
 }
 
-.logo_img{
-    border: solid 7px white;
-    border-radius: 999px;
-    padding: 7px;
-    background-color: white;
-    
+@media only screen and (min-width: 230px) and (max-width: 299px) {
+    .heading p {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .content {
+        text-align: start;
+        word-break: keep-all;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .imgContainer {
+        height: 150px;
+    }
+
+    .logo_img3 {
+        top: -57px;
+        position: relative;
+        width: 250px;
+        height: 423px;
+        padding-left: 18px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+    .con {
+        margin-top: 3rem;
+    }
 }
-.try{
-    padding-top: 10px;
+
+@media only screen and (min-width: 100px) and (max-width: 229px) {
+    .heading p {
+        font-size: 16px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .para p {
+        font-size: 12px;
+        font-weight: 400;
+        width: 100%;
+        word-wrap: break-word;
+        
+    }
+    .con{
+        margin: 0;
+        padding: 0;
+    }
+
+    .imgContainer {
+        display: none;
+        height: 50px;
+    }
+
+    .logo_img3 {
+        top: -45px;
+        position: relative;
+        width: 120px;
+        height: 200px;
+        padding-left: 5px;
+    }
+
+    .try {
+        /* padding: 75px 25px 39px 0px; */
+        padding: 10px;
+    }
+
+    .con {
+        margin-top: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 100px) {
+    .heading p {
+        font-size: 14px;
+        font-weight: 700;
+        /* word-wrap:normal; */
+        white-space: nowrap;
+    }
+
+    .para {
+        font-weight: 400;
+        font-size: 16px;
+        /* white-space:break-spaces; */
+    }
+
+    .imgContainer {
+        display: none;
+        height: 50px;
+    }
+
+    .logo_img3 {
+        top: -45px;
+        position: relative;
+        width: 120px;
+        height: 200px;
+        padding-left: 5px;
+    }
+
+    .try {
+        padding: 75px 25px 39px 0px;
+    }
+
+    .con {
+        margin-top: 3rem;
+    }
 }

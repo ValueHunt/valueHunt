@@ -1,7 +1,7 @@
 .contact {
   /* height: 100vh; */
-   background-color: rgb(202, 108, 108); 
-  
+  background-color: rgb(202, 108, 108);
+
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -14,19 +14,20 @@
   background-position: center;
   /* opacity: 70%; */
 }
+
 .contact h1 {
   text-align: center;
-  color:#ffbea0;
+  color: #ffbea0;
   line-height: 45px;
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 }
 
-.innerform{
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    align-items: center;
-    
+.innerform {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+
 }
 
 .html_form label {
@@ -35,6 +36,7 @@
   font-weight: bold;
   color: #ffa746;
 }
+
 .html_form input[type="text"],
 .html_form input[type="email"] {
   font-size: 22.4px;
@@ -53,16 +55,18 @@
   padding: 15.8px;
   width: 43rem;
   height: 150px;
-  border:1px solid  #cd2424;
+  border: 1px solid #cd2424;
   border-radius: 25px;
   /* margin-bottom: 1px; */
   background: #fff3d4;
 }
-.per_info{
-    display: flex;
-    gap: 87px;
-    width: 100%;
+
+.per_info {
+  display: flex;
+  gap: 87px;
+  width: 100%;
 }
+
 .my_btn {
   display: block;
   padding: 9px 25px;
@@ -77,70 +81,81 @@
 
   font-weight: 0;
   background-color: white;
-  
+
   /* height: 52px; */
-  background-color:#d30c53;
+  background-color: #d30c53;
 }
 
 .my_btn:hover {
   cursor: pointer;
   /* border: 2px solid #fe0000; */
   color: white;
-  background-color:#ff025b;
+  background-color: #ff025b;
 }
 
-.name{
-    display: flex;
-    gap: 9.6px;
-    flex-direction: column;
+.name {
+  display: flex;
+  gap: 9.6px;
+  flex-direction: column;
 }
-.email{
-    display: flex;
-    gap: 9.6px;
-    flex-direction: column;
-    
+
+.email {
+  display: flex;
+  gap: 9.6px;
+  flex-direction: column;
+
 }
-.msg{
-    display: flex;
-    gap: 9.6px;
-    flex-direction: column;
+
+.msg {
+  display: flex;
+  gap: 9.6px;
+  flex-direction: column;
 }
 
 
 
-@media only screen and (min-width: 1024px)  {
+@media only screen and (min-width: 1024px) {
   .contact h1 {
     font-size: 2rem;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 20.4px;
-  
+  .html_form input[type="email"] {
+    font-size: 20.4px;
 
-}
 
-  .html_form textarea{
+  }
+
+  .html_form textarea {
     font-size: 20.4px;
   }
 }
+
+@media only screen and (max-width: 989px) {
+  .contact {
+    margin-top: 6.6rem;
+  }
+}
+
 
 @media only screen and (min-width: 949px) and (max-width: 1024px) {
   .contact h1 {
     font-size: 2rem;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 20.2px;
+  .html_form input[type="email"] {
+    font-size: 20.2px;
 
-}
+  }
 
-.html_form label {
-  font-size: 23.2px;
-  /* color: red; */
+  .html_form label {
+    font-size: 23.2px;
+    /* color: red; */
 
-}
-  
-  .html_form textarea{
+  }
+
+  .html_form textarea {
     font-size: 20.2px;
   }
 }
@@ -149,39 +164,47 @@
   .contact h1 {
     font-size: 2rem;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 20px;
+  .html_form input[type="email"] {
+    font-size: 20px;
 
-}
-.html_form label {
-  font-size: 22.2px;
-  /* color: red; */
+  }
 
-}
-  .html_form textarea{
+  .html_form label {
+    font-size: 22.2px;
+    /* color: red; */
+
+  }
+
+  .html_form textarea {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 569px) and (max-width: 798px) {
-  .per_info{
+  .per_info {
     gap: 70px;
   }
+
   .contact h1 {
     font-size: 1.5rem;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 19px;
-  width: 200px;
+  .html_form input[type="email"] {
+    font-size: 19px;
+    width: 200px;
 
-}
-.html_form label {
-  font-size: 20px;
-  /* color: red; */
+  }
 
-}
-  .html_form textarea{
+  .html_form label {
+    font-size: 20px;
+    /* color: red; */
+
+  }
+
+  .html_form textarea {
     font-size: 19px;
     width: 450px;
   }
@@ -194,24 +217,28 @@
 
 
 @media only screen and (min-width: 300px) and (max-width: 568px) {
-  .per_info{
+  .per_info {
     gap: 20px;
   }
+
   .contact h1 {
     font-size: 28px;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 18px;
-  width: 100px;
+  .html_form input[type="email"] {
+    font-size: 18px;
+    width: 100px;
 
-}
-.html_form label {
-  font-size: 20px;
-  /* color: red; */
+  }
 
-}
-  .html_form textarea{
+  .html_form label {
+    font-size: 20px;
+    /* color: red; */
+
+  }
+
+  .html_form textarea {
     font-size: 19px;
     width: 250px;
   }
@@ -224,26 +251,30 @@
 
 
 
-@media only screen and (min-width: 230px) and (max-width: 299px){
-  .per_info{
+@media only screen and (min-width: 230px) and (max-width: 299px) {
+  .per_info {
     gap: 16px;
   }
+
   .contact h1 {
     font-size: 20px;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 14px;
-  width: 60px;
-  height: 0px;
+  .html_form input[type="email"] {
+    font-size: 14px;
+    width: 60px;
+    height: 0px;
 
-}
-.html_form label {
-  font-size: 14px;
-  /* color: red; */
+  }
 
-}
-  .html_form textarea{
+  .html_form label {
+    font-size: 14px;
+    /* color: red; */
+
+  }
+
+  .html_form textarea {
     font-size: 14px;
     width: 150px;
   }
@@ -251,34 +282,45 @@
   .my_btn {
     width: 10rem;
     font-size: 18px;
-    margin: 0px ;
+    margin: 0px;
     margin-bottom: 17px;
   }
 
+  .contact {
+    margin-top: 3rem;
+  }
 }
 
 
-@media only screen and (min-width: 100px) and (max-width: 229px){
-  .per_info{
+@media only screen and (min-width: 100px) and (max-width: 229px) {
+  .per_info {
     gap: 14px;
     flex-direction: column;
   }
+
+  .contact {
+    margin-top: 3rem;
+  }
+
   .contact h1 {
     font-size: 16px;
   }
+
   .html_form input[type="text"],
-.html_form input[type="email"]{
-  font-size: 14px;
-  width: 62px;
-  height: 0px;
+  .html_form input[type="email"] {
+    font-size: 14px;
+    width: 62px;
+    height: 0px;
 
-}
-.html_form label {
-  font-size: 14px;
-  /* color: red; */
+  }
 
-}
-  .html_form textarea{
+  .html_form label {
+    font-size: 14px;
+    /* color: red; */
+
+  }
+
+  .html_form textarea {
     font-size: 14px;
     width: 60px;
     height: 70px;
@@ -288,7 +330,7 @@
     /* height: 40px; */
     width: 90px;
     font-size: 14px;
-    margin: 0px ;
+    margin: 0px;
     margin-bottom: 17px;
     text-align: center;
   }

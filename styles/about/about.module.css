@@ -1,6 +1,5 @@
 .container {
-    background-color: rgb(244, 244, 244);
-    background-image: url("https://apparelmagic.com/wp-content/uploads/blur-1850082_1920.jpg");
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
     text-align: justify;
@@ -20,28 +19,101 @@
 }
 
 .para {
-    padding-left: 200px;
-    padding-right: 200px;
     letter-spacing: 1.5px;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 36px;
+    font-weight: 400;
+    padding: 40px;
+    margin: 0 110px;
 }
 
-/* Team members photos */
 
 
-.images {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
-    gap: 70px;
+@media only screen and (min-width: 1024px) and (max-width : 1450px) {
+    .para {
+        margin: 0px 90px;
+    }
 }
 
-.member {
-    border-radius: 50%;
-    margin: 8px;
-    border: 0px solid white;
-    justify-content: space-between;
-    align-items: center;
+@media only screen and (min-width: 990px) and (max-width:1024px) {
+    .para {
+        margin: 0px 64px;
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .para {
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        padding: 40px;
+        margin: 0px 64px;
+        word-break: break-word;
+    }
+
+    .container {
+        margin-top: 6.6rem;
+    }
+}
+
+@media only screen and (min-width: 799px) and (max-width: 989px) {
+    .para {
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        padding: 40px;
+        margin: 0px 64px;
+        word-break: break-word;
+    }
+}
+
+
+@media only screen and (min-width: 569px) and (max-width: 798px) {
+    .para {
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        /* padding: 40px; */
+        margin: 0px 33px;
+        word-break: break-word;
+    }
+
+    .member,
+    .images {
+        display: none;
+    }
+
+    .about h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 568px) {}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {}
+
+@media only screen and (min-width: 230px) and (max-width: 299px) {}
+
+@media only screen and (min-width: 100px) and (max-width: 229px) {
+    .para {
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        line-height: 36px;
+        font-weight: 400;
+        word-wrap: normal;
+        text-align: start;
+    }
+
+    .member,
+    .images {
+        display: none;
+    }
+
+    .about h2 {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
 }
