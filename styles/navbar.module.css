@@ -100,7 +100,10 @@
     right: 0;
     z-index: 9999;
     height: 6.6rem;
-    background-color: #f06363;
+    background-color: #fff;
+    .navLink{
+        color: #FF8C00;
+    }
 }
 
 /* Add padding to body when navbar is sticky */
@@ -131,9 +134,11 @@ body.sticky-nav {
         box-sizing: border-box;
         padding: 10px 0;
     }
+
     .navItems a {
         font-size: 1.5rem;
     }
+
     /* .navItems {
         padding-right: 45px;
     } */
@@ -186,7 +191,7 @@ body.sticky-nav {
     }
 
     .navbar {
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
         position: fixed;
         background-color: #FF8C00;
 
@@ -373,6 +378,15 @@ body.sticky-nav {
         margin-right: 0;
         right: 10px;
     }
+    .navbar.sticky {
+        padding: 0;
+        height: 3rem;
+    }
+
+    .navbar {
+        padding: 0;
+        height: 3rem;
+    }
 }
 
 @media only screen and (min-width: 100px) and (max-width: 229px) {
@@ -386,13 +400,13 @@ body.sticky-nav {
     }
 
     .img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .bar {
         display: block;
-        width: 25px;
+        width: 15px;
         height: 3px;
         margin: 5px;
         border: 2px solid #000;
@@ -414,9 +428,20 @@ body.sticky-nav {
         margin-right: 0;
         right: 10px;
     }
+
+    .navbar.sticky {
+        padding: 0;
+        height: 3rem;
+    }
+
+    .navbar {
+        padding: 0;
+        height: 3rem;
+    }
 }
 
 @media only screen and (max-width: 100px) {
+    
     .show a {
         font-size: 1.5rem;
         font-weight: 500;
@@ -427,13 +452,13 @@ body.sticky-nav {
     }
 
     .img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .bar {
         display: block;
-        width: 25px;
+        width: 15px;
         height: 3px;
         margin: 5px;
         border: 2px solid #000;
@@ -443,8 +468,15 @@ body.sticky-nav {
         transition: all 0s ease;
     }
 
-    .navbar {
+    .navbar.sticky {
         padding: 0;
+        height: 3rem;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0;
+        height: 3rem;
     }
 
     .logo {
@@ -453,6 +485,6 @@ body.sticky-nav {
 
     .hamburgerBtn {
         margin-right: 0;
-        right: 10px;
+        right: 5px;
     }
 }

@@ -11,8 +11,7 @@ export default function WhatIs() {
             <div className={styles.content}>
                 {/* ***********************************Heading ************************************* */}
                 <div className={styles.heading}>
-                    <p>
-                        What is ValueHunt?</p>
+                    <p>ValueHunt</p>
                 </div>
                 {/* *********************************************Paragraph ********************************** */}
                 <div className={styles.para}>
@@ -36,7 +35,7 @@ export default function WhatIs() {
                 {/* <Image src='/img/first.jpeg' alt="VH LOGO" width={250} height={250} className={styles.logo_img1} priority />
                 <Image src='/img/second.jpeg' alt="VH LOGO" width={250} height={250} className={styles.logo_img2} priority />
                 <Image src='/img/third.jpeg' alt="VH LOGO" width={250} height={250} className={styles.logo_img3} priority /> */}
-            <Image src='/img/image.jpeg' alt="VH LOGO" width={1000} height={1000} className={styles.logo_img3} priority />
+                <Image src='/img/image.jpeg' alt="VH LOGO" width={1000} height={1000} className={styles.logo_img3} priority />
             </div>
         </div>
     )
