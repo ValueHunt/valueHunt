@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import styles from '../styles/home/WhatIsVh.module.css'
+import styles from '../styles/index/what.module.css'
 import Button from './Button'
-
 
 export default function WhatIs() {
     return (
@@ -18,7 +17,7 @@ export default function WhatIs() {
                 {/* *********************************************Paragraph ********************************** */}
                 <div className={styles.para}>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum tempora inventore minus cumque asperiores pariatur. Explicabo in obcaecati deleniti rem culpa quibusdam, iste ut temporibus quis veritatis adipisci deserunt.
+                    ValueHunt, an innovative website that utilizes the power of artificial intelligence to help you find the best deals on clothes online. Our unique platform allows users to simply upload a photo of the clothing item they are interested in, and our AI model extracts key information about the color and style. We then use this information to search across top e-commerce platforms like Amazon, Flipkart, Ajio, and Myntra to provide you with the lowest possible price for that particular clothing item.
 
                     </p>
                 </div>

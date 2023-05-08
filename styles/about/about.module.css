@@ -1,5 +1,6 @@
 .container {
-    background-color: red;
+    background-color: rgb(244, 244, 244);
+    background-image: url("https://apparelmagic.com/wp-content/uploads/blur-1850082_1920.jpg");
     justify-content: space-between;
     align-items: center;
     text-align: justify;
@@ -19,11 +20,11 @@
 }
 
 .para {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
     letter-spacing: 1.5px;
-    font-size: 18px;
-    line-height: 38px;
+    font-size: 23px;
+    line-height: 36px;
 }
 
 /* Team members photos */
@@ -40,7 +41,7 @@
 .member {
     border-radius: 50%;
     margin: 8px;
-    border: 5px solid greenyellow;
+    border: 0px solid white;
     justify-content: space-between;
     align-items: center;
 }

@@ -1,13 +1,15 @@
 html {
   scroll-behavior: smooth !important;
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 *{
   box-sizing: 'border-box';
   padding:0px;
   margin:0px;
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
